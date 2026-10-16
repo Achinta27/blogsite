@@ -12,7 +12,7 @@ export const toSlugBase = (title: string): string => {
   return base || 'post';
 };
 
-export const withSlugSuffix = (base: string): string =>
+const withSlugSuffix = (base: string): string =>
   `${base}-${crypto.randomBytes(3).toString('hex')}`;
 
 /**

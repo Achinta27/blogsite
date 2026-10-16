@@ -10,7 +10,7 @@ export const CategoryKicker = ({ post }: { post: Pick<Post, 'category'> }) =>
     </Link>
   ) : null;
 
-export const PostMeta = ({ post, className = '' }: { post: Post; className?: string }) => (
+const PostMeta = ({ post, className = '' }: { post: Post; className?: string }) => (
   <p className={`text-[0.8125rem] text-muted ${className}`}>
     <Link to={`/authors/${post.author._id}`} className="font-medium text-ink-soft hover:text-ink">
       {post.author.name}

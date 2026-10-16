@@ -4,7 +4,7 @@ export const POST_STATUSES = ['draft', 'pending_review', 'published', 'rejected'
 export type PostStatus = (typeof POST_STATUSES)[number];
 
 /** Review state of a pending edit to an already-published post. */
-export const REVISION_STATUSES = ['draft', 'pending_review', 'rejected'] as const;
+const REVISION_STATUSES = ['draft', 'pending_review', 'rejected'] as const;
 export type RevisionStatus = (typeof REVISION_STATUSES)[number];
 
 export interface ICoverImage {

@@ -65,7 +65,7 @@ backend/src
   models/        User, Session, Post (+ revision), Category, Comment, Like,
                  Bookmark, Notification, AuditLog
   utils/         jwt, slug, sanitising, Cloudinary, image signatures, transactions
-  scripts/       seedAdmin, seedCategories, migrateLegacyPosts
+  scripts/       seedAdmin, seedCategories
 backend/tests    Jest + Supertest + socket.io-client against an in-memory replica set
 
 frontend/src
@@ -165,7 +165,6 @@ cd backend
 npm run seed:categories          # Web Development, Frontend Engineering, Backend Engineering,
                                  # DevOps, AI and Machine Learning, Career and Tutorials
 ADMIN_EMAIL=admin@margin.local ADMIN_PASSWORD='local-admin-passphrase' ADMIN_NAME='Local Admin' npm run seed:admin
-npm run migrate:posts            # only for databases from earlier versions
 ```
 
 There is no public admin sign-up. The seed reads credentials from the environment, requires a password of at least 12 characters, and never prints it. Running it again for the same email resets the password and re-activates the account as an admin.

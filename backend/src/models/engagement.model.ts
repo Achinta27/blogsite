@@ -1,6 +1,6 @@
 import { Schema, model, Document, Types } from 'mongoose';
 
-export interface IEngagement extends Document {
+interface IEngagement extends Document {
   user: Types.ObjectId;
   post: Types.ObjectId;
   createdAt: Date;

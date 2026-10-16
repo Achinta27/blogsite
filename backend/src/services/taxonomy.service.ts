@@ -7,7 +7,7 @@ import { AuditService, AuditContext } from './audit.service.js';
 const PUBLIC_FILTER = { status: 'published', isDeleted: false };
 
 /** Lower-case, trimmed, single-spaced: "  Node.JS " and "node.js" are the same tag. */
-export const normalizeTag = (tag: string) => tag.trim().toLowerCase().replace(/\s+/g, ' ');
+const normalizeTag = (tag: string) => tag.trim().toLowerCase().replace(/\s+/g, ' ');
 
 const categorySlug = (name: string) => {
   const slug = toSlugBase(name);

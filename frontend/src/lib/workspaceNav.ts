@@ -10,7 +10,7 @@ interface NavItem {
 }
 
 /** Staff see only the sections their permissions unlock. */
-export const WORKSPACE_NAV: NavItem[] = [
+const WORKSPACE_NAV: NavItem[] = [
   { to: '/admin', label: 'Overview', end: true, adminOnly: true },
   { to: '/admin/moderation', label: 'Review queue', permission: 'posts.review' },
   { to: '/admin/posts', label: 'All posts', adminOnly: true },

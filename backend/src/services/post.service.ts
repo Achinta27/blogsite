@@ -45,9 +45,9 @@ const suggestionRank = (title: string, query: string) => {
   return 3;
 };
 
-export const MIN_PUBLISH_TEXT_LENGTH = 20;
+const MIN_PUBLISH_TEXT_LENGTH = 20;
 
-export interface PostInput {
+interface PostInput {
   title?: string;
   subtitle?: string;
   excerpt?: string;

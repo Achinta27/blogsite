@@ -1,6 +1,6 @@
 import { Response } from 'express';
 
-export interface ApiResponseOptions<T> {
+interface ApiResponseOptions<T> {
   res: Response;
   statusCode?: number;
   message?: string;

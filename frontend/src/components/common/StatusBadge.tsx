@@ -17,7 +17,7 @@ const LABELS: Partial<Record<keyof typeof STYLES, string>> = {
   rejected: 'changes requested',
 };
 
-export type BadgeKind = keyof typeof STYLES;
+type BadgeKind = keyof typeof STYLES;
 
 export const StatusBadge = ({ kind, label }: { kind: BadgeKind; label?: string }) => (
   <span

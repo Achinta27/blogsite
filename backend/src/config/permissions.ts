@@ -22,7 +22,7 @@ export const PERMISSION_DEPENDENCIES: Partial<Record<Permission, Permission[]>> 
 export const ROLES = ['admin', 'staff', 'user'] as const;
 export type UserRole = (typeof ROLES)[number];
 
-export interface PermissionHolder {
+interface PermissionHolder {
   role: UserRole;
   permissions?: readonly string[];
 }

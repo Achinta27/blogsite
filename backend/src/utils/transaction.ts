@@ -3,7 +3,7 @@ import mongoose, { ClientSession } from 'mongoose';
 let supported: boolean | null = null;
 
 /** Multi-document transactions need a replica set (Atlas, or a local replica set). */
-export const transactionsSupported = async (): Promise<boolean> => {
+const transactionsSupported = async (): Promise<boolean> => {
   if (supported === null) {
     const hello = await mongoose.connection.db!.admin().command({ hello: 1 });
     supported = Boolean(hello.setName || hello.msg === 'isdbgrid');

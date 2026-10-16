@@ -1,5 +1,3 @@
-import type { PostStatus } from '../types';
-
 export const formatDate = (iso: string | null | undefined, style: 'long' | 'short' = 'long') => {
   if (!iso) return '';
   return new Date(iso).toLocaleDateString('en-US', {
@@ -28,14 +26,6 @@ export const timeAgo = (iso: string) => {
     }
   }
   return formatDate(iso, 'short');
-};
-
-export const STATUS_LABELS: Record<PostStatus, string> = {
-  draft: 'Draft',
-  pending_review: 'In review',
-  published: 'Published',
-  rejected: 'Changes requested',
-  archived: 'Archived',
 };
 
 export const initials = (name = '') =>

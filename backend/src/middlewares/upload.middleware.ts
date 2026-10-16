@@ -1,6 +1,6 @@
 import fileUpload from 'express-fileupload';
 
-export const MAX_COVER_BYTES = 5 * 1024 * 1024;
+const MAX_COVER_BYTES = 5 * 1024 * 1024;
 
 /**
  * Multipart parsing for the cover-image endpoint only. Files are kept in memory

@@ -35,7 +35,7 @@ const StaffPage = named(() => import('./pages/admin/StaffPage'), 'StaffPage');
 const StaffDetailPage = named(() => import('./pages/admin/StaffDetailPage'), 'StaffDetailPage');
 const AuditLogPage = named(() => import('./pages/admin/AuditLogPage'), 'AuditLogPage');
 
-export const App = () => (
+const App = () => (
   <BrowserRouter>
     <AuthProvider>
       <RealtimeProvider>

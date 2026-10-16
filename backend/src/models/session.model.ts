@@ -4,7 +4,7 @@ import { Schema, model, Document, Types } from 'mongoose';
  * One document per signed-in device. Holds the SHA-256 hash of the *current* refresh
  * token only; rotation overwrites it, so a previously issued token no longer matches.
  */
-export interface ISession extends Document {
+interface ISession extends Document {
   user: Types.ObjectId;
   tokenHash: string;
   expiresAt: Date;

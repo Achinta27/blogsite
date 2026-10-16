@@ -1,4 +1,4 @@
-export type ImageType = 'jpeg' | 'png' | 'webp';
+type ImageType = 'jpeg' | 'png' | 'webp';
 
 /**
  * Identifies an image by its magic bytes instead of trusting the filename or the

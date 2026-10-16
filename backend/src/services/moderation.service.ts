@@ -15,7 +15,7 @@ import {
 } from './post.service.js';
 import { realtime } from '../socket/realtime.js';
 
-export const MODERATION_ACTIONS = [
+const MODERATION_ACTIONS = [
   'post.submitted',
   'post.revision_submitted',
   'post.approved',

@@ -1,4 +1,4 @@
-export const MAX_COVER_BYTES = 5 * 1024 * 1024;
+const MAX_COVER_BYTES = 5 * 1024 * 1024;
 export const ACCEPTED_COVER_TYPES = ['image/jpeg', 'image/png', 'image/webp'];
 
 /** Client-side checks for fast feedback. The API re-validates size and real file content. */

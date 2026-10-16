@@ -28,7 +28,7 @@ interface RegisterDTO {
   password: string;
 }
 
-export interface OAuthProfileDTO {
+interface OAuthProfileDTO {
   provider: 'google' | 'facebook';
   providerId: string;
   email?: string;

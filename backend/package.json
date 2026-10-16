@@ -10,7 +10,6 @@
     "typecheck": "tsc --noEmit",
     "test": "jest --runInBand",
     "seed:admin": "tsx src/scripts/seedAdmin.ts",
-    "migrate:posts": "tsx src/scripts/migrateLegacyPosts.ts",
     "seed:categories": "tsx src/scripts/seedCategories.ts"
   },
   "dependencies": {

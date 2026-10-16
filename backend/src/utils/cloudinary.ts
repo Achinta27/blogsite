@@ -10,7 +10,7 @@ if (ENV.CLOUDINARY_ENABLED) {
   });
 }
 
-export const COVER_FOLDER = ENV.CLOUDINARY_FOLDER;
+const COVER_FOLDER = ENV.CLOUDINARY_FOLDER;
 
 export const isCloudinaryConfigured = (): boolean => ENV.CLOUDINARY_ENABLED;
 

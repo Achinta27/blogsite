@@ -2,11 +2,11 @@ import crypto from 'crypto';
 import jwt, { SignOptions } from 'jsonwebtoken';
 import { ENV } from '../config/env.js';
 
-export interface AccessTokenPayload {
+interface AccessTokenPayload {
   userId: string;
 }
 
-export interface RefreshTokenPayload {
+interface RefreshTokenPayload {
   userId: string;
   sid: string;
 }

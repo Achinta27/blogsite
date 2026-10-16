@@ -9,7 +9,7 @@ import { isProviderEnabled } from '../config/passport.js';
 import { AppError } from '../utils/apiError.js';
 import { AuditService, auditContext } from '../services/audit.service.js';
 
-export const REFRESH_COOKIE = 'refreshToken';
+const REFRESH_COOKIE = 'refreshToken';
 const OAUTH_STATE_COOKIE = 'oauthState';
 const AUTH_COOKIE_PATH = '/api/v1/auth';
 

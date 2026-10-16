@@ -4,7 +4,7 @@ import { User } from '../models/user.model.js';
 import { AppError } from '../utils/apiError.js';
 import { realtime } from '../socket/realtime.js';
 
-export interface NotifyInput {
+interface NotifyInput {
   recipients: Array<string | Types.ObjectId>;
   actorId?: string | null;
   type: NotificationType;
